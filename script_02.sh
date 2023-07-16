@@ -1,15 +1,12 @@
-# Bilgisayarlarımız içerisindeki temp dosyalarını silmeye çalışalım.
-
 # ! /bin/bash
 
+# Bilgisayarlarımız içerisindeki temp dosyalarını silmeye çalışalım.
 
 temp_dir=`/tmp`
-
 echo "temp_dir dosyası içerisindeki geçici dosyalar siliniyor."
 
-files = `ls -l ${temp_dir} | wc -l`
-
-echo "${temp_dir} klasörü içerisinde toplamda ${files} temporary(geciçi) dosya bulunmaktadır. "
+files = `ls -l $temp_dir | wc -l`
+echo "$temp_dir klasörü içerisinde toplamda $files temporary(geciçi) dosya bulunmaktadır. "
 
 rm -rf $temp_dir/*
 echo "Temporary dosyalar siliniyor.."
