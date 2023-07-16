@@ -10,7 +10,7 @@ if [[ "$entered_username" == "username" && "$entered_password" == "password" ]]
 then
     echo "Welcome your username and password are corrected!!"
 else
-    echo "Wrong!! Please enter your username and password"
+    echo "Wrong!! Please againn enter your username and password "
 fi
 
 
